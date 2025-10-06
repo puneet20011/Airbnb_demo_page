@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SF Airbnb Listings</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="mb-4">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand h1" href="#"
+              >SF Airbnb Listings (By Puneet)</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <div class="row">
+          <!-- Listings -->
+          <div class="col-lg-8 col-md-12">
+            <section class="listings row g-3">
+              <h2 class="mb-3">Listings</h2>
+
+              <!-- Example Listing -->
+              <div class="col-6">
+                <article class="card h-100">
+                  <img
+                    src="https://a0.muscache.com/pictures/b7c2a199-4c17-4ba6-b81d-751719d2dac6.jpg"
+                    alt="Airbnb Listing"
+                    class="card-img-top"
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title fs-5">
+                      Serviced apartment in San Francisco · ★4.87 · 1 bedroom ·
+                      2 beds · 1 bath
+                    </h3>
+                    <p class="mb-1"><strong>Host:</strong> Holly</p>
+                    <p class="price text-primary fw-bold">$187.00</p>
+                    <p class="rating">⭐️ 4.87</p>
+                    <div
+                      class="description overflow-auto"
+                      style="max-height: 180px"
+                    >
+                      <p>
+                        Our bright garden unit overlooks a lovely backyard area
+                        with fruit trees and native plants. It is an oasis in a
+                        big city...
+                      </p>
+                    </div>
+                    <div class="actions mt-2">
+                      <button class="btn btn-primary">Rent</button>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <!-- End Listing -->
+
+              <!-- Duplicate listings go here if needed -->
+            </section>
+          </div>
+
+          <!-- Create Listing Form -->
+          <div class="col-lg-4 col-md-12">
+            <h2>Create Listing</h2>
+            <form id="form-create-listing">
+              <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input
+                  id="input-title"
+                  type="text"
+                  class="form-control"
+                  name="title"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="price" class="form-label">Price</label>
+                <input
+                  id="input-price"
+                  type="number"
+                  class="form-control"
+                  name="price"
+                  value="120"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <input
+                  id="input-description"
+                  tyoe="text"
+                  class="form-control"
+                  name="description"
+                ></input>
+              </div>
+
+              <div class="mb-3">
+                <button class="btn btn-primary" type="submit">Create</button>
+                <button id="button-cancel" class="btn btn-danger" type="reset">Cancel</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+
+      <footer class="mt-4 text-center">
+        <div>Made by Puneet with ❤️</div>
+      </footer>
+    </div>
+
+    <!-- Container. -->
+
+    <script src="./js/main.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
