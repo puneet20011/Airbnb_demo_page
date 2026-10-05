@@ -2,6 +2,8 @@
 
 A simple demonstration of how to load and display Airbnb listing data using vanilla JavaScript. Perfect for learning basic web development concepts like fetching JSON data and DOM manipulation.
 
+
+
 ## What This Project Does
 
 This is a straightforward example that shows you how to:
